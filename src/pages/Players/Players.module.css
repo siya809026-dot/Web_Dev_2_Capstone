@@ -1,0 +1,167 @@
+.page {
+  padding: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.count {
+  font-size: 13px;
+  color: var(--text2);
+  background: var(--bg3);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: var(--accent);
+}
+
+.roleFilter {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.roleBtn {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--card);
+  color: var(--text2);
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.roleBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.roleActive {
+  background: var(--accent) !important;
+  color: white !important;
+  border-color: var(--accent) !important;
+}
+
+.sortGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.sortSelect {
+  padding: 8px 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+.orderBtn {
+  padding: 8px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.orderBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text2);
+}
+
+.empty button {
+  margin-top: 12px;
+  padding: 8px 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.pageBtn {
+  padding: 7px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.pageBtn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pageBtn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.activePage {
+  background: var(--accent) !important;
+  color: white !important;
+  border-color: var(--accent) !important;
+}
